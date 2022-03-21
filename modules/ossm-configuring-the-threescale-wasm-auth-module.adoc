@@ -14,7 +14,7 @@ Cluster administrators on {product-title} can configure the `threescale-wasm-aut
 
 [NOTE]
 ====
-Configuring the the WebAssembly extension is currently a manual process. Support for fetching the configuration for services from the 3scale system will be available in a future release.
+Configuring the WebAssembly extension is currently a manual process. Support for fetching the configuration for services from the 3scale system will be available in a future release.
 ====
 
 .Prerequisites
@@ -57,6 +57,7 @@ spec:
 $ oc apply -f threescale-wasm-auth-bookinfo.yaml
 ----
 
+[role="_additional-resources"]
 .Additional resources
 * xref:../../service_mesh/v2x/ossm-extensions.adoc#ossm-extensions-deploy_ossm-extensions[Deploying extensions]
 * link:https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources[Custom Resources]

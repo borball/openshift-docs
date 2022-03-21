@@ -1,7 +1,7 @@
 :_content-type: ASSEMBLY
 [id="cco-mode-sts"]
 = Using manual mode with STS
-include::modules/common-attributes.adoc[]
+include::_attributes/common-attributes.adoc[]
 :context: cco-mode-sts
 
 toc::[]
@@ -111,7 +111,7 @@ include::modules/cco-ccoctl-upgrading.adoc[leveloffset=+2]
 include::modules/manually-maintained-credentials-upgrade.adoc[leveloffset=+2]
 
 //Task part 3: Run the OCP installer
-include::modules/sts-mode-installing-manual-run-installer.adoc[leveloffset=+2]
+//include::modules/sts-mode-installing-manual-run-installer.adoc[leveloffset=+2]
 
 //Task part 4: Verify that the cluster is using short-lived credentials
-include::modules/sts-mode-installing-verifying.adoc[leveloffset=+2]
+//include::modules/sts-mode-installing-verifying.adoc[leveloffset=+2]

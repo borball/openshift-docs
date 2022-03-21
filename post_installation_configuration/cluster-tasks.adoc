@@ -2,8 +2,8 @@
 :context: post-install-cluster-tasks
 [id="post-install-cluster-tasks"]
 = Post-installation cluster tasks
-include::modules/common-attributes.adoc[]
-include::modules/ossm-document-attributes.adoc[]
+include::_attributes/common-attributes.adoc[]
+include::_attributes/ossm-document-attributes.adoc[]
 
 toc::[]
 
@@ -73,7 +73,7 @@ so that you can use Tech Preview features.
 |Defines proxies to be used by components needing external network access.  Note: not all components currently consume this value.
 
 |`scheduler.config.openshift.io`
-|Configures xref:../nodes/scheduling/nodes-scheduler-default.adoc#nodes-scheduler-default[scheduler] behavior such as policies and default node selectors.
+|Configures xref:../nodes/scheduling/nodes-scheduler-profiles.adoc#nodes-scheduler-profiles[scheduler] behavior such as profiles and default node selectors.
 
 |===
 
@@ -519,12 +519,14 @@ include::modules/machineset-creating.adoc[leveloffset=+2]
 
 include::modules/creating-an-infra-node.adoc[leveloffset=+2]
 
+[role="_additional-resources"]
 .Additional resources
 
 * For information on how to configure project node selectors to avoid cluster-wide node selector key conflicts, see xref:../nodes/scheduling/nodes-scheduler-node-selectors.adoc#project-node-selectors_nodes-scheduler-node-selectors[Project node selectors].
 
 include::modules/creating-infra-machines.adoc[leveloffset=+2]
 
+[role="_additional-resources"]
 .Additional resources
 
 * See xref:../architecture/control-plane.adoc#architecture-machine-config-pools_control-plane[Node configuration management with machine config pools] for more information on grouping infra machines in a custom pool.
@@ -538,6 +540,7 @@ However, when an infra node is assigned the worker role, there is a chance that 
 
 include::modules/binding-infra-node-workloads-using-taints-tolerations.adoc[leveloffset=+2]
 
+[role="_additional-resources"]
 .Additional resources
 
 * See xref:../nodes/scheduling/nodes-scheduler-about.adoc#nodes-scheduler-about[Controlling pod placement using the scheduler] for general information on scheduling a pod to a node.
@@ -554,32 +557,6 @@ include::modules/infrastructure-moving-registry.adoc[leveloffset=+2]
 include::modules/infrastructure-moving-monitoring.adoc[leveloffset=+2]
 
 include::modules/infrastructure-moving-logging.adoc[leveloffset=+2]
-
-////
-Added a link to reduce the size of this file
-[id="post-install-creating-infrastructure-machinesets-clouds"]
-=== Creating machine sets for different clouds
-
-Use the sample machine set for your cloud.
-
-include::modules/machineset-yaml-aws.adoc[leveloffset=+3]
-
-Machine sets running on AWS support non-guaranteed xref:../machine_management/creating_machinesets/creating-machineset-aws.adoc#machineset-non-guaranteed-instance_creating-machineset-aws[Spot Instances]. You can save on costs by using Spot Instances at a lower price compared to
-On-Demand Instances on AWS. xref:../machine_management/creating_machinesets/creating-machineset-aws.adoc#machineset-creating-non-guaranteed-instance_creating-machineset-aws[Configure Spot Instances] by adding `spotMarketOptions` to the `MachineSet` YAML file.
-
-include::modules/machineset-yaml-azure.adoc[leveloffset=+3]
-
-Machine sets running on Azure support non-guaranteed xref:../machine_management/creating_machinesets/creating-machineset-azure.adoc#machineset-non-guaranteed-instance_creating-machineset-azure[Spot VMs]. You can save on costs by using Spot VMs at a lower price compared to standard VMs on Azure. You can xref:../machine_management/creating_machinesets/creating-machineset-azure.adoc#machineset-creating-non-guaranteed-instance_creating-machineset-azure[configure Spot VMs] by adding `spotVMOptions` to the `MachineSet` YAML file.
-
-include::modules/machineset-yaml-gcp.adoc[leveloffset=+3]
-
-Machine sets running on GCP support non-guaranteed xref:../machine_management/creating_machinesets/creating-machineset-gcp.adoc#machineset-non-guaranteed-instance_creating-machineset-gcp[preemptible VM instances]. You can save on costs by using preemptible VM instances at a lower price
-compared to normal instances on GCP. You can xref:../machine_management/creating_machinesets/creating-machineset-gcp.adoc#machineset-creating-non-guaranteed-instance_creating-machineset-gcp[configure preemptible VM instances] by adding `preemptible` to the `MachineSet` YAML file.
-
-include::modules/machineset-yaml-osp.adoc[leveloffset=+3]
-
-include::modules/machineset-yaml-vsphere.adoc[leveloffset=+3]
-////
 
 include::modules/cluster-autoscaler-about.adoc[leveloffset=+1]
 include::modules/cluster-autoscaler-cr.adoc[leveloffset=+2]
@@ -643,11 +620,12 @@ include::modules/installation-restricted-network-samples.adoc[leveloffset=+2]
 
 include::modules/installation-preparing-restricted-cluster-to-gather-support-data.adoc[leveloffset=+2]
 
+[role="_additional-resources"]
 [discrete]
 [id="manually-rotating-cloud-creds-addtl-resources"]
-=== Additional resources
+== Additional resources
 
-* xref:../authentication/managing_cloud_provider_credentials/about-cloud-credential-operator.adoc[About the Cloud Credential Operator]
+* xref:../authentication/managing_cloud_provider_credentials/about-cloud-credential-operator.adoc#about-cloud-credential-operator[About the Cloud Credential Operator]
 * xref:../installing/installing_aws/manually-creating-iam.adoc#admin-credentials-root-secret-formats_manually-creating-iam-aws[Amazon Web Services (AWS) secret format]
 * xref:../installing/installing_azure/manually-creating-iam-azure.adoc#admin-credentials-root-secret-formats_manually-creating-iam-azure[Microsoft Azure secret format]
 * xref:../installing/installing_gcp/manually-creating-iam-gcp.adoc#admin-credentials-root-secret-formats_manually-creating-iam-gcp[Google Cloud Platform (GCP) secret format]

@@ -1,8 +1,7 @@
 :_content-type: ASSEMBLY
 [id='creating-applications-with-cicd-pipelines']
 = Creating CI/CD solutions for applications using OpenShift Pipelines
-include::modules/common-attributes.adoc[]
-include::modules/pipelines-document-attributes.adoc[]
+include::_attributes/common-attributes.adoc[]
 :context: creating-applications-with-cicd-pipelines
 
 toc::[]
@@ -42,11 +41,12 @@ include::modules/op-assembling-a-pipeline.adoc[leveloffset=+1]
 
 include::modules/op-mirroring-images-to-run-pipelines-in-restricted-environment.adoc[leveloffset=+1]
 
+[role="_additional-resources"]
 .Additional resources
 
 * xref:../../openshift_images/configuring-samples-operator.adoc#samples-operator-restricted-network-install[Configuring Samples Operator for a restricted cluster]
 
-* xref:../../installing/installing-mirroring-installation-images.adoc#installation-about-mirror-registry_installing-mirroring-installation-images[Creating a cluster with a mirrored registry]
+* xref:../../installing/disconnected_install/installing-mirroring-installation-images.adoc#installation-about-mirror-registry_installing-mirroring-installation-images[Creating a cluster with a mirrored registry]
 
 * xref:../../cli_reference/developer_cli_odo/using_odo_in_a_restricted_environment/creating-and-deploying-a-component-to-the-disconnected-cluster.adoc#mirroring-a-supported-builder-image_creating-and-deploying-a-component-to-the-disconnected-cluster[Mirroring a supported builder image]
 
@@ -54,10 +54,13 @@ include::modules/op-running-a-pipeline.adoc[leveloffset=+1]
 
 include::modules/op-adding-triggers.adoc[leveloffset=+1]
 
+include::modules/op-configuring-eventlisteners-to-serve-multiple-namespaces.adoc[leveloffset=+1]
+
 include::modules/op-creating-webhooks.adoc[leveloffset=+1]
 
 include::modules/op-triggering-a-pipelinerun.adoc[leveloffset=+1]
 
+[role="_additional-resources"]
 [id="pipeline-addtl-resources"]
 == Additional resources
 

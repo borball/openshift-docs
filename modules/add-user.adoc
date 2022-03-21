@@ -7,7 +7,7 @@
 = Adding a user
 
 
-Administrator roles are managed using a `dedicated-admins` group on the cluster. You can add and remove users from OpenShift Cluster Manager (OCM).
+Administrator roles are managed using a `dedicated-admins` group on the cluster. You can add and remove users from {cluster-manager-first}.
 
 .Procedure
 

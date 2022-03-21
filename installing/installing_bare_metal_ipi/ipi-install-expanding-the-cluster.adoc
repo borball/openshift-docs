@@ -1,7 +1,7 @@
 :_content-type: ASSEMBLY
 [id="ipi-install-expanding-the-cluster"]
 = Expanding the cluster
-include::modules/common-attributes.adoc[]
+include::_attributes/common-attributes.adoc[]
 :context: ipi-install-expanding
 
 toc::[]
@@ -14,6 +14,11 @@ Expanding the cluster using RedFish Virtual Media involves meeting minimum firmw
 ====
 
 include::modules/ipi-install-preparing-the-bare-metal-node.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+.Additional resources
+
+* xref:../../installing/installing_bare_metal_ipi/ipi-install-installation-workflow.adoc#configuring-host-network-interfaces-in-the-install-config-yaml-file_ipi-install-installation-workflow[(Optional) Configuring host network interfaces in the install-config.yaml file]
 
 include::modules/ipi-install-preparing-to-deploy-with-virtual-media-on-the-baremetal-network.adoc[leveloffset=+1]
 

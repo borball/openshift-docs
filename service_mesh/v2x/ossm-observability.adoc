@@ -1,7 +1,7 @@
 :_content-type: ASSEMBLY
 [id="ossm-observability"]
 = Metrics, logs, and traces
-include::modules/ossm-document-attributes.adoc[]
+include::_attributes/ossm-document-attributes.adoc[]
 :context: observability
 
 toc::[]
@@ -21,6 +21,8 @@ include::modules/ossm-kiali-viewing-metrics.adoc[leveloffset=+2]
 include::modules/ossm-distr-tracing.adoc[leveloffset=+1]
 
 include::modules/ossm-config-external-jaeger.adoc[leveloffset=+2]
+
+include::modules/ossm-config-sampling.adoc[leveloffset=+2]
 
 include::modules/ossm-jaeger-accessing-console.adoc[leveloffset=+1]
 

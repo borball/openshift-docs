@@ -1,7 +1,7 @@
 :_content-type: ASSEMBLY
 [id="virt-managing-vm-snapshots"]
 = Managing virtual machine snapshots
-include::modules/virt-document-attributes.adoc[]
+include::_attributes/virt-document-attributes.adoc[]
 :context: virt-managing-vm-snapshots
 
 toc::[]
@@ -11,9 +11,11 @@ You can create and delete virtual machine (VM) snapshots for VMs, whether the VM
 * Red Hat OpenShift Container Storage
 * Any other storage provider with the Container Storage Interface (CSI) driver that supports the Kubernetes Volume Snapshot API
 
+Online snapshots have a default time deadline of five minutes (`5m`) that can be changed, if needed.
+
 [IMPORTANT]
 ====
-Online snapshots are not supported for virtual machines that have hot-plugged virtual disks.
+Online snapshots are supported for virtual machines that have hot-plugged virtual disks. However, hot-plugged disks that are not in the virtual machine specification are not included in the snapshot.
 ====
 
 [NOTE]
@@ -47,6 +49,7 @@ include::modules/virt-deleting-vm-snapshot-web.adoc[leveloffset=+1]
 
 include::modules/virt-deleting-vm-snapshot-cli.adoc[leveloffset=+1]
 
+[role="_additional-resources"]
 == Additional resources
 
 * xref:../../../storage/container_storage_interface/persistent-storage-csi-snapshots.adoc#persistent-storage-csi-snapshots[CSI Volume Snapshots]

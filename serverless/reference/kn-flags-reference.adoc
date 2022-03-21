@@ -1,10 +1,12 @@
 :_content-type: ASSEMBLY
 [id="kn-flags-reference"]
-= kn flags reference
-include::modules/common-attributes.adoc[]
-include::modules/serverless-document-attributes.adoc[]
+= Knative CLI flags
+include::_attributes/common-attributes.adoc[]
+include::_attributes/serverless-document-attributes.adoc[]
 :context: kn-flags-reference
 
 toc::[]
+
+This section provides information about additional, optional flags that you can use with `kn` commands.
 
 include::modules/specifying-sink-flag-kn.adoc[leveloffset=+1]

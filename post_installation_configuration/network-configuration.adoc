@@ -2,8 +2,8 @@
 :context: post-install-network-configuration
 [id="post-install-network-configuration"]
 = Post-installation network configuration
-include::modules/common-attributes.adoc[]
-include::modules/ossm-document-attributes.adoc[]
+include::_attributes/common-attributes.adoc[]
+include::_attributes/ossm-document-attributes.adoc[]
 
 toc::[]
 
@@ -106,3 +106,4 @@ You can configure some aspects of an {product-title} on {rh-openstack-first} clu
 include::modules/installation-osp-configuring-api-floating-ip.adoc[leveloffset=+2]
 include::modules/installation-osp-kuryr-port-pools.adoc[leveloffset=+2]
 include::modules/installation-osp-kuryr-settings-active.adoc[leveloffset=+2]
+include::modules/nw-osp-enabling-ovs-offload.adoc[leveloffset=+2]

@@ -1,14 +1,11 @@
 :_content-type: ASSEMBLY
 //Jenkins-Tekton-Migration
-include::modules/common-attributes.adoc[]
-include::modules/pipelines-document-attributes.adoc[]
 [id="migrating-from-jenkins-to-tekton_{context}"]
 = Migrating from Jenkins to Tekton
+include::_attributes/common-attributes.adoc[]
 :context: migrating-from-jenkins-to-tekton
-//include::modules/common-attributes.adoc[]
 
 toc::[]
-
 
 Jenkins and Tekton are extensively used to automate the process of building, testing, and deploying applications and projects. However, Tekton is a cloud-native CI/CD solution that works seamlessly with Kubernetes and {product-title}. This document helps you migrate your Jenkins CI/CD workflows to Tekton.
 
@@ -21,3 +18,11 @@ include::modules/jt-migrating-from-jenkins-plugins-to-tekton-hub-tasks.adoc[leve
 include::modules/jt-extending-tekton-capabilities-using-custom-tasks-and-scripts.adoc[leveloffset=+1]
 
 include::modules/jt-comparison-of-jenkins-tekton-execution-models.adoc[leveloffset=+1]
+
+include::modules/jt-examples-of-common-use-cases.adoc[leveloffset=+1]
+
+[role="_additional-resources"]
+[id="additional-resources"]
+== Additional resources
+
+* xref:../../authentication/using-rbac.adoc#using-rbac[Role-based Access Control]
